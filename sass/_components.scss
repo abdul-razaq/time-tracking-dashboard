@@ -1,0 +1,67 @@
+.card {
+	background-color: var(--color-dark-blue-secondary);
+	border-radius: 2rem;
+	overflow: hidden;
+}
+
+.user {
+	color: var(--color-white);
+	grid-row: 1 / 3;
+
+	.user {
+		background-color: var(--color-blue-primary);
+		padding: 3.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border-radius: inherit;
+
+		&__avatar {
+			height: 8rem;
+			width: 8rem;
+			box-sizing: content-box;
+			border-radius: 50%;
+			border: 3.3px solid var(--color-white);
+			overflow: hidden;
+			margin-bottom: 4rem;
+
+			& > img {
+				height: 100%;
+				width: 100%;
+				display: block;
+			}
+		}
+
+		& > p {
+			font-size: 1.6rem;
+			font-weight: 300;
+		}
+
+		& > h1 {
+			font-size: 4rem;
+			font-weight: var(--font-weight-normal);
+			margin-bottom: 5rem;
+
+			& > * {
+				display: block;
+				line-height: 1.2;
+			}
+		}
+	}
+	.durations {
+		padding: 3rem;
+		color: var(--color-blue-desaturated);
+
+		& > li {
+			cursor: pointer;
+
+			&.active {
+				color: var(--color-white);
+			}
+		}
+
+		& > li:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+}

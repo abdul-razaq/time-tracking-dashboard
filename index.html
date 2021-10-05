@@ -7,10 +7,71 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0"
 		/>
-		<link rel="stylesheet" href="main.min.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon-32x32.png"
+			type="image/png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>Time Tracker</title>
 	</head>
 	<body>
-		<div class="container"></div>
+		<main class="container">
+			<div class="card user">
+				<div class="user">
+					<div class="user__avatar">
+						<img
+							src="./assets/images/image-jeremy.png"
+							alt="Avatar for Jeremy"
+						/>
+					</div>
+					<p>Report for</p>
+					<h1>
+						<span>Jeremy</span>
+						<span>Robson</span>
+					</h1>
+				</div>
+				<ul class="durations">
+					<li class="duration">Daily</li>
+					<li class="duration active">Weekly</li>
+					<li class="duration">Monthly</li>
+				</ul>
+			</div>
+			<div class="card work">
+				<div class="work__icon"></div>
+				<div class="work__details"></div>
+			</div>
+
+			<div class="card play">
+				<div class="play__icon"></div>
+				<div class="play__details"></div>
+			</div>
+
+			<div class="card study">
+				<div class="study__icon"></div>
+				<div class="study__details"></div>
+			</div>
+
+			<div class="card exercise">
+				<div class="exercise__icon"></div>
+				<div class="exercise__details"></div>
+			</div>
+
+			<div class="card social">
+				<div class="social__icon"></div>
+				<div class="social__details"></div>
+			</div>
+
+			<div class="card self-care">
+				<div class="self-care__icon"></div>
+				<div class="self-care__details"></div>
+			</div>
+		</main>
 	</body>
 </html>

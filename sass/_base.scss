@@ -25,7 +25,7 @@
 	--color-dark-blue-secondary: #1c1f4a;
 	--color-blue-desaturated: #6f76c8;
 	--color-blue-pale: #bdc1ff;
-  --color-white: #fff;
+	--color-white: #fff;
 
 	// Font
 	--root-font-family: 'Rubik', sans-serif;
@@ -40,15 +40,18 @@ html {
 }
 
 body {
-  background-color: var(--color-dark-blue-primary);
-  font-family: var(--root-font-family);
-  font-size: var(--root-font-size);
-  line-height: 1.7;
-  box-sizing: border-box;
+	background-color: var(--color-dark-blue-primary);
+	font-family: var(--root-font-family);
+	font-size: var(--root-font-size);
+	line-height: 1.7;
+	box-sizing: border-box;
 }
 
 .container {
-  max-width: 900px;
-  margin: 5rem auto;
-  background-color: orangered;
+	max-width: 120rem;
+	margin: 0 auto;
+	margin-top: 15%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(27.75rem, max-content));
+	gap: 3rem;
 }
