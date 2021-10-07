@@ -24,7 +24,7 @@
 	--color-dark-blue-primary: #0f1424;
 	--color-dark-blue-secondary: #1c1f4a;
 	--color-blue-desaturated: #6f76c8;
-	--color-blue-pale: #bdc1ff;
+	--color-blue-pale: #bdc1ff57;
 	--color-white: #fff;
 
 	// Font
@@ -37,6 +37,14 @@
 
 html {
 	font-size: 62.5%;
+
+	@media only screen and (max-width: 75em) {
+		font-size: 56.25%;
+	}
+
+	@media only screen and (max-width: 56.25em) {
+		font-size: 43.75%;
+	}
 }
 
 body {
